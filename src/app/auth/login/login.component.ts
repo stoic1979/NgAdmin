@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
-//import { AuthService } from './../auth/auth.service';
+import { AuthService } from '../auth.service';
 
 
 @Component({
@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    //private authService: AuthService 
+    private authService: AuthService 
   ) {}
 
   ngOnInit() {
@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     if (this.form.valid) {
-      //this.authService.login(this.form.value);
+      this.authService.login(this.form.value);
       console.log("[LoginComponent] :: sending login request ");
     }
     this.formSubmitAttempt = true;
