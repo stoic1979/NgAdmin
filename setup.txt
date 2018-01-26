@@ -28,7 +28,7 @@ $ npm install --save @angular/material @angular/cdk hammerjs
 ---------------------------------------
 
 // select some material theme
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 // material icons
 @import '~material-design-icons/iconfont/material-icons.css';
@@ -47,11 +47,17 @@ $ npm install --save @angular/animations
 
 
 
+- Creating a HomeComponent module and component page
+------------------------------------------------------
+
+$ ng g m home --routing
+$ ng g c home/home -st
 
 
-$ ng g m auth --routing
 
 
+- Creating a shared MaterialModule for our project
+$ ng g m app-material
 
 
 
