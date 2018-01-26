@@ -1,10 +1,52 @@
 SETUP
 ======
 
+- Create Ng Project
+---------------------
+
 $ ng new NgAdmin --routing -is -st -style=scss
 
 With the command above, we are asking Angular CLI to create a new project with a routing module (--routing), 
 use inline style (-is) for app.component.ts, skip the creation of unit testing files (-st) - since we will not need .spec file for this example and also use scss as extension for our style/CSS files.
+
+
+- Install material ui and hammer
+-------------------------------
+$ npm install --save @angular/material @angular/cdk hammerjs
+
+
+- Configure angular-cli.json and hammerjs inside .angular-cli.json
+
+"scripts": [
+  "../node_modules/hammerjs/hammer.min.js"
+],
+
+
+
+
+- Include a theme and Material Icons
+---------------------------------------
+
+// select some material theme
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+// material icons
+@import '~material-design-icons/iconfont/material-icons.css';
+
+
+
+
+- Configure app.module
+-----------------------
+
+$ npm install --save @angular/animations
+
+
+
+
+
+
+
 
 
 $ ng g m auth --routing
@@ -12,7 +54,27 @@ $ ng g m auth --routing
 
 
 
+
+
+CLI DOCS
+=========
+
+- Generating a route
+----------------------
+
+The CLI supports routing in several ways:
+
+We include the @angular/router NPM package when creating or initializing a project.
+
+When you generate a module, you can use the --routing option like ng g module my-module --routing to create a separate file my-module-routing.module.ts to store the module routes.
+
+The file includes an empty Routes object that you can fill with routes to different components and/or modules.
+
+You can use the --routing option with ng new to create a app-routing.module.ts file when you create or initialize a project.
+
+
 REFERENCES
 ===========
 - https://material.angularjs.org/latest/getting-started
+- https://github.com/angular/angular-cli
 - https://loiane.com/2017/07/getting-started-with-angular-material-2/#1-create-your-angular-project-with-angular-cli
