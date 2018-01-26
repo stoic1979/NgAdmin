@@ -34,3 +34,18 @@
 .full-width-input {
   width: 100%;
 }
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-sidenav {
+  padding: 20px;
+}
+
+mat-sidenav {
+  width: 200px;
+}

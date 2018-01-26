@@ -11,6 +11,9 @@ import {
 } from '@angular/material';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 
 @NgModule({
@@ -24,7 +27,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatMenuModule,
     MatCardModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSidenavModule,
+    MatDividerModule
   ]
   declarations: []
 })
