@@ -54,7 +54,11 @@ $ ng g m home --routing
 $ ng g c home/home -st
 
 
-
+Auth
+-----
+ng g m auth --routing
+ng g c auth/login -st
+ng g c auth/signup -st
 
 - Creating a shared MaterialModule for our project
 $ ng g m app-material

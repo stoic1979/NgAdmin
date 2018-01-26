@@ -15,3 +15,15 @@
      Every toolbar row uses a flexbox row layout. */
   flex: 1 1 auto;
 }
+
+mat-card {
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+}
+.signin-content {
+  padding: 60px 1rem;
+}
+.full-width-input {
+  width: 100%;
+}
