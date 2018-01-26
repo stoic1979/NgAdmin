@@ -22,8 +22,18 @@ export class AuthService {
     }
   }
 
+  signup(user: User){
+  	console.log("[AuthService] :: sign up...");
+
+    if (user.email !== '' && user.password != '' ) {
+      this.loggedIn.next(true);
+      this.router.navigate(['/']);
+    }
+  }
+
   logout() {
     this.loggedIn.next(false);
     this.router.navigate(['/auth/login']);
   }
+
 }
