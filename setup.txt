@@ -1,0 +1,18 @@
+SETUP
+======
+
+$ ng new NgAdmin --routing -is -st -style=scss
+
+With the command above, we are asking Angular CLI to create a new project with a routing module (--routing), 
+use inline style (-is) for app.component.ts, skip the creation of unit testing files (-st) - since we will not need .spec file for this example and also use scss as extension for our style/CSS files.
+
+
+$ ng g m auth --routing
+
+
+
+
+REFERENCES
+===========
+- https://material.angularjs.org/latest/getting-started
+- https://loiane.com/2017/07/getting-started-with-angular-material-2/#1-create-your-angular-project-with-angular-cli
