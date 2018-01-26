@@ -2,6 +2,16 @@
 
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
+
 /*
-@import '~material-design-icons/iconfont/material-icons.css';
+@import '../node_modules/material-design-icons/iconfont/material-icons.css';
 */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+.toolbar-fill-remaining-space-to-right {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
