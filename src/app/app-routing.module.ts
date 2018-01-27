@@ -13,6 +13,7 @@ const routes: Routes = [
    	  path: 'auth', 
    	  loadChildren: 'app/auth/auth.module#AuthModule' 
    	}
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

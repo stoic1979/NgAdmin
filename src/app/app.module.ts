@@ -18,7 +18,7 @@ import { AuthGuard } from './auth/auth.guard';
   ],
   imports: [
     BrowserModule, 
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [AuthService, AuthGuard],
