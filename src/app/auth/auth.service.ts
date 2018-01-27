@@ -5,10 +5,10 @@ import { User } from './user';
 
 @Injectable()
 export class AuthService {
-  private loggedIn = new BehaviorSubject<boolean>(false);
+  private loggedIn = new BehaviorSubject<boolean>(false); // {1}
 
   get isLoggedIn() {
-    return this.loggedIn.asObservable();
+    return this.loggedIn.asObservable(); // {2}
   }
 
   constructor(
@@ -16,24 +16,14 @@ export class AuthService {
   ) {}
 
   login(user: User){
-    if (user.email !== '' && user.password != '' ) {
+    if (user.userName !== '' && user.password != '' ) { // {3}
       this.loggedIn.next(true);
       this.router.navigate(['/']);
     }
   }
 
-  signup(user: User){
-  	console.log("[AuthService] :: sign up...");
-
-    if (user.email !== '' && user.password != '' ) {
-      this.loggedIn.next(true);
-      this.router.navigate(['/']);
-    }
-  }
-
-  logout() {
+  logout() {                            // {4}
     this.loggedIn.next(false);
-    this.router.navigate(['/auth/login']);
+    this.router.navigate(['/login']);
   }
-
 }

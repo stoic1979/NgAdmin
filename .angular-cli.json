@@ -57,27 +57,6 @@
   },
   "defaults": {
     "styleExt": "scss",
-    "class": {
-      "spec": false
-    },
-    "component": {
-      "inlineStyle": true,
-      "spec": false
-    },
-    "directive": {
-      "spec": false
-    },
-    "guard": {
-      "spec": false
-    },
-    "module": {
-      "spec": false
-    },
-    "pipe": {
-      "spec": false
-    },
-    "service": {
-      "spec": false
-    }
+    "component": {}
   }
 }

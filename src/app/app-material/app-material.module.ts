@@ -14,8 +14,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 
-
-
 @NgModule({
   imports: [
     CommonModule
@@ -30,7 +28,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatFormFieldModule,
     MatSidenavModule,
     MatDividerModule
-  ]
+  ],
   declarations: []
 })
 export class AppMaterialModule { }

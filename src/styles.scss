@@ -1,38 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-
-@import '@angular/material/prebuilt-themes/indigo-pink.css';
-
-
-/*
-@import '../node_modules/material-design-icons/iconfont/material-icons.css';
-*/
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 
-.toolbar-fill-remaining-space-to-right {
-  /* This fills the remaining space, by using flexbox. 
-     Every toolbar row uses a flexbox row layout. */
-  flex: 1 1 auto;
+.left-sidenav {
+  padding: 20px;
 }
 
-.mat-card-auth {
-  max-width: 400px;
-  margin: 2em auto;
-  text-align: center;
-}
-
-.mat-card-home {
-  max-width: 90%;
-  margin: 2em auto;
-  text-align: center;
-}
-
-.signin-content {
-  padding: 60px 1rem;
-}
-.full-width-input {
-  width: 100%;
+mat-sidenav {
+  width: 200px;
 }
 
 .example-sidenav-content {
@@ -42,10 +19,9 @@
   justify-content: center;
 }
 
-.left-sidenav {
-  padding: 20px;
-}
-
-mat-sidenav {
-  width: 200px;
+.mat-card-home {
+  max-width: 90%;
+  min-height: 500px;
+  margin: 2em auto;
+  text-align: center;
 }
