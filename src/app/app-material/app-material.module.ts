@@ -13,6 +13,9 @@ import {
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatTableModule} from '@angular/material/table';
+
+
 
 @NgModule({
   imports: [
@@ -27,7 +30,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatInputModule,
     MatFormFieldModule,
     MatSidenavModule,
-    MatDividerModule
+    MatDividerModule,
+    MatTableModule
   ],
   declarations: []
 })
